@@ -1,0 +1,226 @@
+<svg stroke="#000" stroke-width="0.03em" fill="none" viewBox="0 0 1600 1600" width="500vw"
+  xmlns="http://www.w3.org/2000/svg">
+  <g><text x="0" y="7" stroke-width="0.03" fill="#000" font-size="0.3em" font-family="monospace">0:00</text>
+    <line x1="0" x2="0" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="42.44031830238727" y="14" transform="translate(-5 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">1:35</text>
+    <line x1="42.44031830238727" x2="42.44031830238727" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="76.39257294429709" y="7" transform="translate(-5 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">2:51</text>
+    <line x1="76.39257294429709" x2="76.39257294429709" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="97.61273209549073" y="14" transform="translate(-5 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">3:39</text>
+    <line x1="97.61273209549073" x2="97.61273209549073" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="131.56498673740055" y="7" transform="translate(-5 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">4:56</text>
+    <line x1="131.56498673740055" x2="131.56498673740055" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="144.29708222811672" y="14" transform="translate(-5 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">5:24</text>
+    <line x1="144.29708222811672" x2="144.29708222811672" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="186.73740053050398" y="7" transform="translate(-5 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">7:00</text>
+    <line x1="186.73740053050398" x2="186.73740053050398" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="220.68965517241378" y="14" transform="translate(-5 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">8:16</text>
+    <line x1="220.68965517241378" x2="220.68965517241378" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="241.9098143236074" y="7" transform="translate(-5 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">9:04</text>
+    <line x1="241.9098143236074" x2="241.9098143236074" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="275.8620689655172" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">10:20</text>
+    <line x1="275.8620689655172" x2="275.8620689655172" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="309.814323607427" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">11:37</text>
+    <line x1="309.814323607427" x2="309.814323607427" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="331.03448275862064" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">12:24</text>
+    <line x1="331.03448275862064" x2="331.03448275862064" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="364.98673740053044" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">13:41</text>
+    <line x1="364.98673740053044" x2="364.98673740053044" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="377.7188328912466" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">14:09</text>
+    <line x1="377.7188328912466" x2="377.7188328912466" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="420.15915119363393" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">15:45</text>
+    <line x1="420.15915119363393" x2="420.15915119363393" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="454.11140583554374" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">17:01</text>
+    <line x1="454.11140583554374" x2="454.11140583554374" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="475.33156498673736" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">17:49</text>
+    <line x1="475.33156498673736" x2="475.33156498673736" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="509.28381962864717" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">19:05</text>
+    <line x1="509.28381962864717" x2="509.28381962864717" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="522.0159151193633" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">19:34</text>
+    <line x1="522.0159151193633" x2="522.0159151193633" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="564.4562334217505" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">21:10</text>
+    <line x1="564.4562334217505" x2="564.4562334217505" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="598.4084880636603" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">22:26</text>
+    <line x1="598.4084880636603" x2="598.4084880636603" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="619.628647214854" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">23:14</text>
+    <line x1="619.628647214854" x2="619.628647214854" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="653.5809018567638" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">24:30</text>
+    <line x1="653.5809018567638" x2="653.5809018567638" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="687.5331564986736" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">25:46</text>
+    <line x1="687.5331564986736" x2="687.5331564986736" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="708.7533156498673" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">26:34</text>
+    <line x1="708.7533156498673" x2="708.7533156498673" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="742.7055702917771" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">27:51</text>
+    <line x1="742.7055702917771" x2="742.7055702917771" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="755.4376657824932" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">28:19</text>
+    <line x1="755.4376657824932" x2="755.4376657824932" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="797.8779840848805" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">29:55</text>
+    <line x1="797.8779840848805" x2="797.8779840848805" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="831.8302387267904" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">31:11</text>
+    <line x1="831.8302387267904" x2="831.8302387267904" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="853.0503978779841" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">31:59</text>
+    <line x1="853.0503978779841" x2="853.0503978779841" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="887.002652519894" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">33:15</text>
+    <line x1="887.002652519894" x2="887.002652519894" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="920.9549071618038" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">34:32</text>
+    <line x1="920.9549071618038" x2="920.9549071618038" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="942.1750663129975" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">35:19</text>
+    <line x1="942.1750663129975" x2="942.1750663129975" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="976.1273209549074" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">36:36</text>
+    <line x1="976.1273209549074" x2="976.1273209549074" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="988.8594164456237" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">37:04</text>
+    <line x1="988.8594164456237" x2="988.8594164456237" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1031.299734748011" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">38:40</text>
+    <line x1="1031.299734748011" x2="1031.299734748011" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1065.251989389921" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">39:56</text>
+    <line x1="1065.251989389921" x2="1065.251989389921" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1086.4721485411146" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">40:44</text>
+    <line x1="1086.4721485411146" x2="1086.4721485411146" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1120.4244031830244" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">42:00</text>
+    <line x1="1120.4244031830244" x2="1120.4244031830244" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1133.1564986737408" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">42:29</text>
+    <line x1="1133.1564986737408" x2="1133.1564986737408" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1175.596816976128" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">44:05</text>
+    <line x1="1175.596816976128" x2="1175.596816976128" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1209.549071618038" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">45:21</text>
+    <line x1="1209.549071618038" x2="1209.549071618038" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1230.7692307692316" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">46:09</text>
+    <line x1="1230.7692307692316" x2="1230.7692307692316" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1264.7214854111414" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">47:25</text>
+    <line x1="1264.7214854111414" x2="1264.7214854111414" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1298.6737400530512" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">48:42</text>
+    <line x1="1298.6737400530512" x2="1298.6737400530512" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1319.893899204245" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">49:29</text>
+    <line x1="1319.893899204245" x2="1319.893899204245" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1353.846153846155" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">50:46</text>
+    <line x1="1353.846153846155" x2="1353.846153846155" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1366.578249336871" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">51:14</text>
+    <line x1="1366.578249336871" x2="1366.578249336871" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1409.0185676392584" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">52:50</text>
+    <line x1="1409.0185676392584" x2="1409.0185676392584" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1442.9708222811682" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">54:06</text>
+    <line x1="1442.9708222811682" x2="1442.9708222811682" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1464.190981432362" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">54:54</text>
+    <line x1="1464.190981432362" x2="1464.190981432362" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1498.143236074272" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">56:10</text>
+    <line x1="1498.143236074272" x2="1498.143236074272" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1532.0954907161818" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">57:27</text>
+    <line x1="1532.0954907161818" x2="1532.0954907161818" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1553.3156498673754" y="14" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">58:14</text>
+    <line x1="1553.3156498673754" x2="1553.3156498673754" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1587.2679045092855" y="7" transform="translate(-10 -1)" stroke-width="0.03" fill="#000" font-size="0.6em"
+      font-family="monospace">59:31</text>
+    <line x1="1587.2679045092855" x2="1587.2679045092855" y1="7" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+  <g><text x="1600.0000000000014" y="14" transform="translate(-11.5 0)" stroke-width="0.03" fill="#000"
+      font-size="0.3em" font-family="monospace">60:00</text>
+    <line x1="1600.0000000000014" x2="1600.0000000000014" y1="14" y2="100%" stroke-dasharray="3,1"></line>
+  </g>
+</svg>

@@ -2,6 +2,7 @@
   (:require [browser.colors :as colors]
             [browser.contrapunto-5 :as c5]
             [goog.string :refer [format]]
+            [goog.string.format]
             [reagent.dom :as dom]
             [browser.difraccion-interferencia :as difraccion-interferencia]
             [browser.habitat-macroforma :as habitat]))
@@ -36,16 +37,17 @@
 
 (defn as-% [dur period] (str (* 100 (/ dur period)) "%"))
 
-(def get-color (memoize (fn [name*] (rand-nth colors/hex-colors))))
+(defonce get-color (memoize (fn [name*] (rand-nth colors/hex-colors))))
 
 (defn instrument-line [human-duration period [name* moments]]
   [:div {:class "instrument-line"
          :key name*}
-   (map (fn [{:keys [start-at dur quien notas] :as event}]
+   (map (fn [{:keys [start-at dur que notas] :as event}]
           (let [times (get-human-time-data human-duration period event)
-                title (format "%s %s (%s - %s, dur: %s)"
+                title (format "%s %s %s (%s - %s, dur: %s)"
                               (name name*)
-                              quien
+                              (if (= (name name*) que) "" que)
+                              (or notas "")
                               (times :time/start-at)
                               (times :time/end-at)
                               (times :time/dur))]
@@ -54,11 +56,11 @@
                    :class "instrument-event"
                    :style {:width (as-% dur period)
                            :left (as-% start-at period)
-                           :background-color (str (get-color quien) "88")}}
+                           :background-color (str (get-color name*) "88")}}
              [:div {:class "event-main"}
-              [:p {:style {:font-size 17}} (name name*) " " #_quien]
+              [:p {:style {:font-size 17 :line-break "anywhere"}} que]
               [:div {:class "event-notes"} [:p notas]]
-              [:span {:style {:font-size 18}} (format "%s-%s" (times :time/start-at) (times :time/end-at))]]]))
+              #_[:span {:style {:font-size 18}} (format "%s-%s" (times :time/start-at) (times :time/end-at))]]]))
         moments)])
 
 (defn form
@@ -70,11 +72,66 @@
         #_reverse
         (map (partial instrument-line human-duration period)))])
 
+
+(defn grid-durations [duration grid]
+  (let [total (apply + grid)
+        grid-seq-as-% (reduce #(conj %1 (+ (last %1) (/ %2 total))) [] grid)
+        grid-seq-as-minutes (map (comp as-minutes #(* duration %)) grid-seq-as-%)]
+    {:as-% (cons 0 grid-seq-as-%)
+     :grid-in-% (cons 0 (map #(/ % total) grid))
+     :as-minutes (cons "0:00" grid-seq-as-minutes)}))
+
+(defn grid [duration grid]
+  (let [width 1600]
+    [:svg {:stroke "#000"
+           :stroke-width "0.03em"
+           :fill "none"
+           :viewBox (format "0 0 %s 800" width)
+           :width "100%"
+           :xmlns "http://www.w3.org/2000/svg"}
+     (let [{:keys [as-minutes as-%]} (grid-durations duration grid)]
+       (map-indexed
+        (fn [i v]
+          (let [v* (str (* width v))
+                text-y (if (even? i) 7 14)
+                text-transform (cond (zero? i) nil
+                                     (= i (- (count as-%) 1)) "translate(-11.5 0)"
+                                     (< i 9) "translate(-5 -1)"
+                                     (>= i 9) "translate(-10 -1)"
+                                     )
+                font-size (if (or (zero? i) (= i (- (count as-%) 1)))
+                            "0.3em" "0.6em")]
+            [:g
+             [:text {:x v*
+                     :y text-y
+                     :transform text-transform
+                     :stroke-width 0.03
+                     :fill "#000"
+                     :font-size font-size
+                     :font-family "monospace"}
+              (str (nth as-minutes i) "(" i ")")]
+             [:line {:x1 v*
+                     :x2 v*
+                     :y1 text-y
+                     :y2 "100%"
+                     :stroke-dasharray "3,1"}]]))
+        as-%))]))
+
 (defn app []
-  (form
-   (* 60 60)
-   habitat/parts
-   habitat/total-units))
+  [:div {:style {:width "100vw"}}
+   [:div {:style {:position "absolute"
+                  :top 0
+                  :left 0
+                  :width "inherit"
+                  :height "100%"}}
+    (grid (* 60 60) habitat/grid)]
+   [:div {:style {:padding-top 40}}
+    (form
+     (* 60 60)
+     habitat/parts
+     habitat/total-units)]])
+
+
 
 (defn start []
   (dom/render [app] (. js/document (getElementById "app"))))

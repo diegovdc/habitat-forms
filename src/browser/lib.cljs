@@ -13,7 +13,7 @@
   (into {}
         (map (fn [[k v]]
                [k
-                (map (fn [[quien start length notas]]
-                       (merge {:quien quien :notas notas}
+                (map (fn [[que start length notas]]
+                       (merge {:que que :notas notas}
                               (range* grid start length))) v)])
              simple-parts)))

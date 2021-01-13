@@ -1,4 +1,6 @@
 build/
+!build/browser/
+!build/browser/styles.css
 node_modules/
 target/
 .shadow-cljs/
