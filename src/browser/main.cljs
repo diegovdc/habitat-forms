@@ -118,7 +118,7 @@
                      :stroke-dasharray "3,1"}]]))
         as-%))]))
 
-(defonce state (r/atom {::scale 2}))
+(defonce state (r/atom {::scale 1}))
 (defn app []
   [:div {:style {:width (-> @state ::scale (* 100) (str "vw"))}}
    [:div {:style {:position "fixed"
