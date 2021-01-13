@@ -1,11 +1,12 @@
 (ns browser.main
   (:require [browser.colors :as colors]
             [browser.contrapunto-5 :as c5]
-            [goog.string :refer [format]]
-            [goog.string.format]
-            [reagent.dom :as dom]
             [browser.difraccion-interferencia :as difraccion-interferencia]
-            [browser.habitat-macroforma :as habitat]))
+            [browser.habitat-macroforma :as habitat]
+            [goog.string :refer [format]]
+            goog.string.format
+            [reagent.core :as r]
+            [reagent.dom :as dom]))
 
 ;; MOS p=34, g=21
 (def phi-form [3 5 3 5 5 3 5 5])
@@ -117,8 +118,20 @@
                      :stroke-dasharray "3,1"}]]))
         as-%))]))
 
+(defonce state (r/atom {::scale 2}))
 (defn app []
-  [:div {:style {:width "100vw"}}
+  [:div {:style {:width (-> @state ::scale (* 100) (str "vw"))}}
+   [:div {:style {:position "fixed"
+                  :z-index 3
+                  :bottom 0
+                  :right 0}}
+    [:label "Score size"
+     [:input {:type "number"
+              :value (@state ::scale)
+              :step 0.25
+              :on-change #(do
+                            (js/console.log "scale" %)
+                            (swap! state assoc ::scale (-> % .-target .-value js/Number )))}]]]
    [:div {:style {:position "absolute"
                   :top 0
                   :left 0
