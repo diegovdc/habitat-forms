@@ -1,0 +1,72 @@
+body {
+  background-color: #2f33ff94;
+  padding: 0;
+  margin: 0;
+  font-family: sans;
+}
+
+p {
+  margin: 0;
+}
+
+:root {
+  --instrument-line-height: 20px;
+}
+
+.instrument-line {
+  position: relative;
+  height: var(--instrument-line-height);
+}
+
+.instrument-event {
+  position: absolute;
+  top: 0;
+  height: var(--instrument-line-height);
+  display: flex;
+  justify-content: space-between;
+  cursor: help;
+}
+
+.event-main {
+  overflow: hidden;
+}
+
+.event-main span {
+  font-size: 12px;
+}
+
+.event-notes {
+  flex-grow: 3;
+  font-size: 13px;
+  margin-left: 3px;
+}
+
+.event-notes span {
+  text-decoration: underline;
+}
+
+.grid {
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 295%;
+  height: 100%;
+  left: -195%;
+}
+
+.grid-cell {
+  text-align: right;
+  position: relative;
+  border-right: 1px dotted black;
+}
+
+.grid-cell:nth-child(even) {
+  top: 30px;
+  height: calc(100% - 30px);
+}
+
+.grid-cell span {
+  position: relative;
+  right: -50%;
+  font-size: 30px;
+}
