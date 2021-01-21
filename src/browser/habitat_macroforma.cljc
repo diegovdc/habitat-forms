@@ -45,11 +45,11 @@
     :campos [["" 3 7 "campos"]
              ["" 26 4 "campos"]]
     :orbitales [["" 6 3 "orbitales"]
-                ["" 11 3 "orbitales"]
+                #_["" 11 3 "orbitales"]
                 ["" 21 3 "orbitales"]]
     :electrones [["" 4 3 "electrones"]
                  ["" 47 2 "electrones"]]
-    "Interacciones cuánticas" [["" 12 5 "interaccines cuánticas (fotones/color)"]]
+    "Interacciones cuánticas" [["" 11 6 "interaccines cuánticas (fotones/color)"]]
     }))
 
 (comment (-> parts keys count))
