@@ -43,26 +43,29 @@
 (defn instrument-line [human-duration period [name* moments]]
   [:div {:class "instrument-line"
          :key name*}
-   (map (fn [{:keys [start-at dur que notas] :as event}]
-          (let [times (get-human-time-data human-duration period event)
-                title (format "%s %s %s (%s - %s, dur: %s)"
-                              (name name*)
-                              (if (= (name name*) que) "" que)
-                              (or notas "")
-                              (times :time/start-at)
-                              (times :time/end-at)
-                              (times :time/dur))]
-            [:div {:key (str name start-at dur)
-                   :title title
-                   :class "instrument-event"
-                   :style {:width (as-% dur period)
-                           :left (as-% start-at period)
-                           :background-color (str (get-color name*) "88")}}
-             [:div {:class "event-main"}
-              [:p {:style {:font-size 17 :line-break "anywhere"}} que]
-              [:div {:class "event-notes"} [:p notas]]
-              #_[:span {:style {:font-size 18}} (format "%s-%s" (times :time/start-at) (times :time/end-at))]]]))
-        moments)])
+   (doall
+    (map (fn [{:keys [start-at dur que notas opts] :as event}]
+           (let [times (get-human-time-data human-duration period event)
+                 title (format "%s %s %s (%s - %s, dur: %s)"
+                               (name name*)
+                               (if (= (name name*) que) "" que)
+                               (or notas "")
+                               (times :time/start-at)
+                               (times :time/end-at)
+                               (times :time/dur))]
+             [:div {:key (str name start-at dur)
+                    :title title
+                    :class (str "instrument-event " (:class opts))
+                    :style (merge
+                            {:width (as-% dur period)
+                             :left (as-% start-at period)
+                             :background-color (str (get-color name*) "88")}
+                            (:style opts))}
+              [:div {:class "event-main"}
+               [:p {:style {}} que]
+               [:div {:class "event-notes"} [:p notas]]
+               #_[:span {:style {:font-size 18}} (format "%s-%s" (times :time/start-at) (times :time/end-at))]]]))
+         moments))])
 
 (defn form
   "`period` determines the full length of the form"
@@ -91,32 +94,33 @@
            :width "100%"
            :xmlns "http://www.w3.org/2000/svg"}
      (let [{:keys [as-minutes as-%]} (grid-durations duration grid)]
-       (map-indexed
-        (fn [i v]
-          (let [v* (str (* width v))
-                text-y (if (even? i) 7 14)
-                text-transform (cond (zero? i) nil
-                                     (= i (- (count as-%) 1)) "translate(-11.5 0)"
-                                     (< i 9) "translate(-5 -1)"
-                                     (>= i 9) "translate(-10 -1)"
-                                     )
-                font-size (if (or (zero? i) (= i (- (count as-%) 1)))
-                            "0.3em" "0.6em")]
-            [:g
-             [:text {:x v*
-                     :y text-y
-                     :transform text-transform
-                     :stroke-width 0.03
-                     :fill "#000"
-                     :font-size font-size
-                     :font-family "monospace"}
-              (str (nth as-minutes i) "(" i ")")]
-             [:line {:x1 v*
-                     :x2 v*
-                     :y1 text-y
-                     :y2 "100%"
-                     :stroke-dasharray "3,1"}]]))
-        as-%))]))
+       (doall
+        (map-indexed
+         (fn [i v]
+           (let [v* (str (* width v))
+                 text-y (if (even? i) 7 14)
+                 text-transform (cond (zero? i) nil
+                                      (= i (- (count as-%) 1)) "translate(-11.5 0)"
+                                      (< i 9) "translate(-5 -1)"
+                                      (>= i 9) "translate(-10 -1)"
+                                      )
+                 font-size (if (or (zero? i) (= i (- (count as-%) 1)))
+                             "0.3em" "0.6em")]
+             [:g {:key i}
+              [:text {:x v*
+                      :y text-y
+                      :transform text-transform
+                      :stroke-width 0.03
+                      :fill "#000"
+                      :font-size font-size
+                      :font-family "monospace"}
+               (str (nth as-minutes i) "(" i ")")]
+              [:line {:x1 v*
+                      :x2 v*
+                      :y1 text-y
+                      :y2 "100%"
+                      :stroke-dasharray "3,1"}]]))
+         as-%)))]))
 
 (defonce state (r/atom {::scale 1}))
 (defn app []
@@ -139,6 +143,13 @@
                   :height "100%"}}
     (grid (* 60 60) habitat/grid)]
    [:div {:style {:padding-top 40}}
+    [:div {:class "time-characters"}
+     (form
+      (* 60 60)
+      habitat/time-characters
+      habitat/total-units)]
+    [:div {:style {:background-color "black"
+                   :height 20}}]
     (form
      (* 60 60)
      habitat/parts

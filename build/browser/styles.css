@@ -27,8 +27,36 @@ p {
   cursor: help;
 }
 
+.time-characters .instrument-line {
+  position: absolute;
+  width: 100%;
+  top: 12px;
+  height: calc(100% + 20px);
+}
+
+.time-character {
+  height: 100%;
+  color: white;
+  font-weight: bold;
+}
+
+.time-character .event-main p {
+  font-size: 13px;
+}
+
+.time-character .event-notes {
+  opacity: 0.2;
+  transition: opacity 0.3s ease;
+  overflow: visible;
+}
+
+.time-character:hover .event-notes {
+  opacity: 1;
+}
+
 .event-main {
   overflow: hidden;
+  font-size: 17px;
 }
 
 .event-main span {
