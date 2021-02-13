@@ -1,5 +1,5 @@
 body {
-  background-color: #2f33ff94;
+  background-color: black;
   padding: 0;
   margin: 0;
   font-family: sans;
@@ -25,17 +25,16 @@ p {
   display: flex;
   justify-content: space-between;
   cursor: help;
+  color: #eee;
 }
 
 .time-characters .instrument-line {
   position: absolute;
   width: 100%;
-  top: 12px;
-  height: calc(100% + 20px);
 }
 
 .time-character {
-  height: 100%;
+  height: 100vh;
   color: white;
   font-weight: bold;
 }

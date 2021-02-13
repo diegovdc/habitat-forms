@@ -111,7 +111,7 @@
                       :y text-y
                       :transform text-transform
                       :stroke-width 0.03
-                      :fill "#000"
+                      :fill "#fff"
                       :font-size font-size
                       :font-family "monospace"}
                (str (nth as-minutes i) "(" i ")")]
@@ -119,6 +119,7 @@
                       :x2 v*
                       :y1 text-y
                       :y2 "100%"
+                      :stroke "#fff"
                       :stroke-dasharray "3,1"}]]))
          as-%)))]))
 
