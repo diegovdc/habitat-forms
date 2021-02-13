@@ -29,7 +29,7 @@ p {
 }
 
 .time-characters .instrument-line {
-  position: absolute;
+  position: relative;
   width: 100%;
 }
 
