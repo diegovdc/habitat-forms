@@ -56,23 +56,25 @@
 (def time-characters
   (lib/make-parts
    grid
-   {:time-characters [["Oscuridad-humedad" 0 8 "" {:class "time-character"
+   {:time-characters [["Oscuridad-humedad" 0 8 "Tiempo geológico" {:class "time-character"
                                                    :style {:background-color "#23252788"}}]
-                      ["Transiciones lumínicas" 8 4 ""
+                      ["Transiciones lumínicas" 8 4 "Tiempo geológico"
                        {:class "time-character"
                         :style {:background "linear-gradient(180deg, rgba(131,58,180,0.3) 0%, rgba(253,29,29,0.3) 50%, rgba(252,176,69,0.3) 100%)"}}]
-                      ["Coro del amanecer" 12 8 "" {:class "time-character"
-                                                    :style {:background "radial-gradient(circle, rgba(69,252,154,0.373284347918855) 11%, rgba(252,176,69,0.49933476808692223) 42%, rgba(253,29,94,0.5861695019804797) 59%, rgba(131,58,180,0.6617997540813201) 76%, rgba(253,29,94,0.2164216028208158) 96%, rgba(252,176,69,0.4405112386751575) 100%)"}}]
-                      ["Polinizadores" 20 6 "" {:class "time-character"
-                                                :style {:background "radial-gradient(circle, rgba(251,252,69,0.373284347918855) 0%, rgba(248,250,123,1) 49%, rgba(243,247,196,1) 75%, rgba(252,176,69,0.49933476808692223) 89%, rgba(252,176,69,0.4405112386751575) 80%)"}}]
-                      ["Escucha de aves" 26 9 "Amplio, espaciado, multiples puntos de escucha, escucha no humana, echos, reverberaciones, sonido en el espacio"
+                      ["Coro del amanecer" 12 8 "Tiempo de las especies"
+                       {:class "time-character"
+                        :style {:background "radial-gradient(circle, rgba(69,252,154,0.373284347918855) 11%, rgba(252,176,69,0.49933476808692223) 42%, rgba(253,29,94,0.5861695019804797) 59%, rgba(131,58,180,0.6617997540813201) 76%, rgba(253,29,94,0.2164216028208158) 96%, rgba(252,176,69,0.4405112386751575) 100%)"}}]
+                      ["Polinizadores" 20 6 "Tiempo de las especies"
+                       {:class "time-character"
+                        :style {:background "radial-gradient(circle, rgba(251,252,69,0.373284347918855) 0%, rgba(248,250,123,1) 49%, rgba(243,247,196,1) 75%, rgba(252,176,69,0.49933476808692223) 89%, rgba(252,176,69,0.4405112386751575) 80%)"}}]
+                      ["Escucha de aves" 26 9 "Tiempo geológico y de las especies: Amplio, espaciado, multiples puntos de escucha, escucha no humana, echos, reverberaciones, sonido en el espacio"
                        {:class "time-character"
                         :style {:background "radial-gradient(circle, rgba(34,193,195,0.4) 0%, rgba(253,187,45,0.5) 100%)"}}]
-                      ["Transiciones lumínicas" 35 5 ""
+                      ["Transiciones lumínicas" 35 5 "Tiempo atmosférico y gelógico"
                        {:class "time-character"
                         :style {:background "linear-gradient(0deg, rgba(131,58,180,0.3) 0%, rgba(253,29,29,0.3) 50%, rgba(252,176,69,0.3) 100%)"
                                 }}]
-                      ["Lo humano" 40 6 "psicológico, misterio, oscuridad"
+                      ["Lo humano" 40 6 "Tiempo de las especies: psicológico, misterio, oscuridad"
                        {:class "time-character"
                         :style {:background "#ff6f2a78"}}]]}))
 (comment (-> parts keys count))
