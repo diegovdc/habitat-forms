@@ -87,7 +87,7 @@
                       ["Tránsitos nocturnos" 46 9 "Tiempo de las especies: actividad exterior e interior"
                        {:class "time-character"
                         :style {:background "radial-gradient(circle, rgba(0,117,105,0.5) 25%, rgba(9,9,121,0.5) 50%, rgba(154,0,233,0.5) 120%)"}}]
-                      ["Cosmos" 55 1 "Tiempo cósmico"
+                      ["Cosmos" 55 1 "Tiempo cósmico: (coda) a un nuevo universo"
                        {:class "time-character"
                         :style {:background "linear-gradient(90deg, rgba(9,9,121,0.5) 10%, rgba(0,0,0,0.3) 71%, rgba(255,255,255,0.5) 100%)"}}]]}))
 (comment (-> parts keys count))
