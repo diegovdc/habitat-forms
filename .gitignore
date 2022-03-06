@@ -5,3 +5,6 @@ node_modules/
 target/
 .shadow-cljs/
 .nrepl-port
+.clj-kondo/
+.lsp/
+

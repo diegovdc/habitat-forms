@@ -125,36 +125,35 @@
 
 (defonce state (r/atom {::scale 1}))
 (defn app []
-  [:div {:style {:width (-> @state ::scale (* 100) (str "vw"))}}
-   [:div {:style {:position "fixed"
-                  :z-index 3
-                  :bottom 0
-                  :right 0}}
-    [:label "Score size"
-     [:input {:type "number"
-              :value (@state ::scale)
-              :step 0.25
-              :on-change #(do
-                            (js/console.log "scale" %)
-                            (swap! state assoc ::scale (-> % .-target .-value js/Number )))}]]]
-   [:div {:style {:position "absolute"
-                  :top 0
-                  :left 0
-                  :width "inherit"
-                  :height "100%"}}
-    (grid (* 60 60) habitat/grid)]
-   [:div {:style {:padding-top 40}}
-    [:div {:class "time-characters"}
-     (form
-      (* 60 60)
-      habitat/time-characters
-      habitat/total-units)]
-    [:div {:style {:background-color "black"
-                   :height 20}}]
-    (form
-     (* 60 60)
-     habitat/parts
-     habitat/total-units)]])
+  (let [total-dur (* 68.76 60)]
+    [:div {:style {:width (-> @state ::scale (* 100) (str "vw"))}}
+     [:div {:style {:position "fixed"
+                    :z-index 3
+                    :bottom 0
+                    :right 0}}
+      [:label "Score size"
+       [:input {:type "number"
+                :value (@state ::scale)
+                :step 0.25
+                :on-change #(do
+                              (js/console.log "scale" %)
+                              (swap! state assoc ::scale (-> % .-target .-value js/Number )))}]]]
+     [:div {:style {:position "absolute"
+                    :top 0
+                    :left 0
+                    :width "inherit"
+                    :height "100%"}}
+      (grid total-dur habitat/grid)]
+     [:div {:style {:padding-top 40}}
+      [:div {:class "time-characters"}
+       (form total-dur
+             habitat/time-characters
+             habitat/total-units)]
+      [:div {:style {:background-color "black"
+                     :height 20}}]
+      (form total-dur
+            habitat/parts
+            habitat/total-units)]]))
 
 
 

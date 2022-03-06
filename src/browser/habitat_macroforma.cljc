@@ -1,7 +1,13 @@
 (ns browser.habitat-macroforma
   (:require [browser.lib :as lib]))
 
-(def grid [10,8,5,8,3,10,8,5,8,8,5,8,3,10,8,5,8,3,10,8,5,8,8,5,8,3,10,8,5,8,8,5,8,3,10,8,5,8,3,10,8,5,8,8,5,8,3,10,8,5,8,8,5,8,3])
+(def grid
+  (into
+   ;; a secondary Phi based MOS
+   [10,8,5,8,3,10,8,5,8,8,5,8,3,10,8,5,8,3,10,8,5,8,8,5,8,3,10,8,5,8,8,5,8,3,10,8,5,8,3,10,8,5,8,8,5,8,3,10,8,5,8,8,5,8,3],
+   [55] ;; estrellas
+   )
+  )
 
 (def total-units (apply + grid))
 
@@ -11,7 +17,7 @@
    {:amanecer [["Amanecer" 0 19]]
     :Día [["Día" 21 17]]
     :anochecer [[""  38 8 "Hay un fuego"]]
-    "Travesía: llamas - Luz - Polinización - mundo subatómico - Hábitat" [["Travesía: llamas - Luz - Polinización - mundo subatómico - Hábitat" 38 16]]
+    "Travesía: llamas - Luz - Polinización - mundo subatómico - Hábitat" [["Travesía: llamas - Luz - Polinización - mundo subatómico - Hábitat" 38 17]]
     :atractores [["" 28 5 "toro"]
                  #_["" 31 5 "toro, extraño"]
                  ["" 39 6 "punto fijo, cíclo límite"]]
@@ -23,6 +29,7 @@
                            ["" 20 3 "mov. vuelo" ]
                            ["" 28 5 "escucha de aves" ]
                            #_["" 29 9 "habitar" ]]
+    :cosmos [["" 51 5 "estrellas"]]
     :humedad [["" 0 9 "humedad"]]
     :insectos [["" 7 4 "descomponer"]
                ["" 17 2 "habitar"]
@@ -76,5 +83,11 @@
                                 }}]
                       ["Lo humano" 40 6 "Tiempo de las especies: psicológico, misterio, oscuridad"
                        {:class "time-character"
-                        :style {:background "#ff6f2a78"}}]]}))
+                        :style {:background "linear-gradient(90deg, rgba(255,167,6,0.4) 13%, rgba(203,73,28,0.7) 32%, rgba(255,203,0,0.7) 40%, rgba(186,89,13,0.5) 70%, rgba(154,0,233,0.2) 100%)"}}]
+                      ["Tránsitos nocturnos" 46 9 "Tiempo de las especies: actividad exterior e interior"
+                       {:class "time-character"
+                        :style {:background "radial-gradient(circle, rgba(0,117,105,0.5) 25%, rgba(9,9,121,0.5) 50%, rgba(154,0,233,0.5) 120%)"}}]
+                      ["Cosmos" 55 1 "Tiempo cósmico"
+                       {:class "time-character"
+                        :style {:background "linear-gradient(90deg, rgba(9,9,121,0.5) 10%, rgba(0,0,0,0.3) 71%, rgba(255,255,255,0.5) 100%)"}}]]}))
 (comment (-> parts keys count))
