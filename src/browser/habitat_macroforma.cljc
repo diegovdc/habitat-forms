@@ -3,11 +3,10 @@
 
 (def grid
   (into
-   ;; a secondary Phi based MOS
-   [10,8,5,8,3,10,8,5,8,8,5,8,3,10,8,5,8,3,10,8,5,8,8,5,8,3,10,8,5,8,8,5,8,3,10,8,5,8,3,10,8,5,8,8,5,8,3,10,8,5,8,8,5,8,3],
-   [55] ;; estrellas
-   )
-  )
+    ;; a secondary Phi based MOS
+   [10,8,5,8,3,10,8,5,8,8,5,8,3,10,8,5,8,3,10,8,5,8,8,5,8,3,10,8,5,8,8,5,8,3,10,8,5,8,3,10,8,5,8,8,5,8,3,10,8,5,8,8,5,8,3]
+;; estrellas
+   [5,8,10,3,8,10,3,8]))
 
 (def total-units (apply + grid))
 
@@ -23,13 +22,13 @@
                  ["" 39 6 "punto fijo, cíclo límite"]]
     :tiempos []
     "Espacio de las áves" [#_["" 7 0 "Coro de la mañana"]
-                           ["" 12 5 "coro de la mañana" ]
+                           ["" 12 5 "coro de la mañana"]
                            #_["" 22 2 "alimentación"]
-                           ["" 19 1 "escucha" ]
-                           ["" 20 3 "mov. vuelo" ]
-                           ["" 28 5 "escucha de aves" ]
-                           #_["" 29 9 "habitar" ]]
-    :cosmos [["" 51 5 "estrellas"]]
+                           ["" 19 1 "escucha"]
+                           ["" 20 3 "mov. vuelo"]
+                           ["" 28 5 "escucha de aves"]
+                           #_["" 29 9 "habitar"]]
+    :cosmos [["" 51 12 "estrellas"]]
     :humedad [["" 0 9 "humedad"]]
     :insectos [["" 7 4 "descomponer"]
                ["" 17 2 "habitar"]
@@ -57,14 +56,13 @@
                 ["" 21 3 "orbitales"]]
     :electrones [["" 4 3 "electrones"]
                  ["" 47 2 "electrones"]]
-    "Interacciones cuánticas" [["" 11 6 "interacciones cuánticas (fotones/color)"]]
-    }))
+    "Interacciones cuánticas" [["" 11 6 "interacciones cuánticas (fotones/color)"]]}))
 
 (def time-characters
   (lib/make-parts
    grid
    {:time-characters [["Oscuridad-humedad" 0 8 "Tiempo geológico" {:class "time-character"
-                                                   :style {:background-color "#23252788"}}]
+                                                                   :style {:background-color "#23252788"}}]
                       ["Transiciones lumínicas" 8 4 "Tiempo geológico"
                        {:class "time-character"
                         :style {:background "linear-gradient(180deg, rgba(131,58,180,0.3) 0%, rgba(253,29,29,0.3) 50%, rgba(252,176,69,0.3) 100%)"}}]
@@ -79,15 +77,14 @@
                         :style {:background "radial-gradient(circle, rgba(34,193,195,0.4) 0%, rgba(253,187,45,0.5) 100%)"}}]
                       ["Transiciones lumínicas" 35 5 "Tiempo atmosférico y gelógico"
                        {:class "time-character"
-                        :style {:background "linear-gradient(0deg, rgba(131,58,180,0.3) 0%, rgba(253,29,29,0.3) 50%, rgba(252,176,69,0.3) 100%)"
-                                }}]
+                        :style {:background "linear-gradient(0deg, rgba(131,58,180,0.3) 0%, rgba(253,29,29,0.3) 50%, rgba(252,176,69,0.3) 100%)"}}]
                       ["Lo humano" 40 6 "Tiempo de las especies: psicológico, misterio, oscuridad"
                        {:class "time-character"
                         :style {:background "linear-gradient(90deg, rgba(255,167,6,0.4) 13%, rgba(203,73,28,0.7) 32%, rgba(255,203,0,0.7) 40%, rgba(186,89,13,0.5) 70%, rgba(154,0,233,0.2) 100%)"}}]
                       ["Tránsitos nocturnos" 46 9 "Tiempo de las especies: actividad exterior e interior"
                        {:class "time-character"
                         :style {:background "radial-gradient(circle, rgba(0,117,105,0.5) 25%, rgba(9,9,121,0.5) 50%, rgba(154,0,233,0.5) 120%)"}}]
-                      ["Cosmos" 55 1 "Tiempo cósmico: (coda) a un nuevo universo"
+                      ["Cosmos" 55 8 "Tiempo cósmico: (coda) a un nuevo universo"
                        {:class "time-character"
                         :style {:background "linear-gradient(90deg, rgba(9,9,121,0.5) 10%, rgba(0,0,0,0.3) 71%, rgba(255,255,255,0.5) 100%)"}}]]}))
 (comment (-> parts keys count))

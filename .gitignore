@@ -7,4 +7,4 @@ target/
 .nrepl-port
 .clj-kondo/
 .lsp/
-
+.DS_Store
